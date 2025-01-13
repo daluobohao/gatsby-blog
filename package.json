@@ -4,6 +4,7 @@
   "private": true,
   "description": "gatsby-blog",
   "author": "haowang1",
+  "homepage": "https://daluobohao.github.io/gatsby-blog",
   "keywords": [
     "gatsby"
   ],
@@ -13,7 +14,8 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "deploy": "gatsby build && gh-pages -d public"
   },
   "dependencies": {
     "@mdx-js/react": "^3.1.0",
@@ -30,6 +32,7 @@
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.19",
     "autoprefixer": "^10.4.20",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.3.3"
